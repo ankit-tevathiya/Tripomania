@@ -1,0 +1,94 @@
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax" />
+
+            <ImageView
+                android:id="@+id/bgheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.47"
+                android:background="@drawable/mumcuture"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.47"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Mumbai Culture"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="1260sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="The Mumbai culture is a blend of traditional festivals, food, music and theatres. \nIt is the busiest cosmopolitan city of India holding its age-old culture. Marathi is the official language of the people of Mumbai.\n The bambaiya Hindi is also very popular among the Mumbai people.   The Mumbai music is an important part of the Mumbai culture tradition. In the coastal areas, the people love to sing the Marathi Koli songs which are an integral part of the culture of Mumbai. \nSince, the city is inhabited with varied ethnic groups; there has been a change in the music culture of Mumbai. The Bollywood music is a very popular music of the city. Aside these, the Indian Classical Music, International Pop Music Heavy Metal Music are heard by the people of Mumbai.   The festivals of Mumbai are an important of the Mumbai culture. \nCelebrations are observed by Mumbaikars (addressed to Mumbai people) irrespective of caste and creed. Diwali, Holi, Christmas, Id, Dussera, Moharram, Ganesh Chaturthi, Durga Puja Maha Shivratri, Navratri, and Good Friday are the most important occasions of the city people. These festivals are celebrated in a grand way uniting all the people of Mumbai.   The culture of Mumbai is incomplete without the traditional delicacies of Mumbai. The traditional food of Mumbai includes Potato bhaji, Batatya rassa, etc."
+                android:textSize="24sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

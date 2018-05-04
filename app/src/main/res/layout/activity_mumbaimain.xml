@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    tools:context="com.example.pranjal.secondproject.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="350sp">
+
+            <ViewFlipper
+                android:id="@+id/bckgrndViewFlipper1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mumbaia" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mumbaib" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mumbaic" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mumbaid" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mumbaie" />
+
+
+
+
+
+
+            </ViewFlipper>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/culture"
+                        android:layout_width="78dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="false"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick1"
+                        android:src="@drawable/mumculture" />
+
+                    <ImageView
+                        android:id="@+id/lifestyle"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick2"
+                        android:src="@drawable/mumlife" />
+
+                    <ImageView
+                        android:id="@+id/attract"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick3"
+                        android:src="@drawable/mumtourism" />
+
+                    <ImageView
+                        android:id="@+id/hotel"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick4"
+                        android:src="@drawable/mumhotel" />
+
+                    <ImageView
+                        android:id="@+id/train"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick5"
+                        android:src="@drawable/trainy" />
+
+                    <ImageView
+                        android:id="@+id/planes"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick6"
+                        android:src="@drawable/planes" />
+
+                </LinearLayout>
+
+
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="435dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Mumbai"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="Mumbai is the capital city of the Indian state of Maharashtra.This wealthiest city in India has a mixture of modern lifestyle and culture along with a beautifull coast-line which makes it an ideal tourist spot. "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text=" BEST TIME TO VISIT"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="The predominant season in Mumbai is the monsoon. But rain or sunshine, Mumbai is frequented by tourists all year round. Here’s a monthly break up of Mumbai's climatic conditions so you can plan when to go:   November to February: The winter months are the most pleasant in Mumbai. Being a coastal area, winters are mild and the temperature goes to a minimum of 10°C. The days are cool and perfect for outdoor activities and sightseeing. With a large Christian population and a number of beautiful churches, Christmas is celebrated with a lot of enthusiasm in Mumbai and is a good time to visit the city. February is also when a lot of the cultural events such as the popular Kala Ghoda Arts Festival take place. So if you’re into literature, music or arts, this is a good time to plan a trip.   March to May: Humidity starts rising from March and as summers start approaching. The maximum temperature in May can go as high as 40°C. It may not be the ideal weather to head out in the sun but evenings are pleasant. Carry cool cottons and sunglasses to avoid the heat. However, there is a possibility of getting good hotel deals during this time. If visiting Mumbai during this time, you can also plan getaways or short road trips to nearby places like Mahabaleshwar.   June to October: This is the famous monsoon season in Mumbai which sees continuous rainfall, particularly in the months of July and August. It’s a beautiful time in Mumbai, especially by the sea. While travelling during these months can seem difficult, you will realize that life never stops in Mumbai once you're there. It goes on as usual and public transport keeps running in all weather conditions. What's more, monsoon is an excellent time for you to plan weekend getaways or road trips to various hill stations around. Some of them are Matheran, Igatpuri, Lonavala, Khandala and Mahabaleshwar..quot"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/BEWAREOF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="WHAT TO BUY #FAMOUSFOR"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="1.Witness the Gigantic Bandra -Worli Sea Link  \n2.Have Time of Your Life at Essel World and Water Kingdom  \n3.Visit Film City: Here’s where All the Action Takes Place  \n4.Two New Tiger Reserves in Maharashtra  \n5.Walk Down the Historical Lanes at Elephanta Caves  \n6.Enjoy Horse Racing at Mahalakshmi Race Course  \n7.Take Colaba-Borivali BEST Bus Ride  \n8.Shop to Your Heart’s Content at Colaba Causeway Market  \n9.Hangout at Classy Café Mondegar  \n10.Take a Walk in the Universe at Nehru Planetarium  \n11.Enjoy Day Outing in Borivali National Park "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="BEWARE OF"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Mumbai is the largest city in India. Before you travel to Mumbai, do your research and learn how to stay safe in one of the most bustling metro areas in Asia.\nDriving\nWhile you may think you’re a good driver, you’ve never driven in Mumbai. It’s a whole different story here, with buses, motorcycles, cars, and mopeds crowding the
+streets at all times. If you’re able to, take a cab. If this isn’t an option, search for a local bus to find your way around town. Most foreigners who decide to drive in Mumbai find themselves frustrated, lost, or both.\nIf you’re not taking a prepaid or metered taxi, make sure you negotiate the price before you leave for your destination. Many locals and informed tourists take the trains to avoid the traffic on the streets. However, the trains carry their own dangers. They’re often overcrowded and women who choose to purchase a general/men’s compartment ticket can be at risk. If you’re a woman, consider spending a little more for a women’s compartment ticket or a first class ticket. While the train can be scary, it’s usually on time and it’s a fairly quick way to get around the city.\nWeather\nMumbai sits on the Arabian Sea and is in the tropical zone. As a result, the climate can be dangerous, especially during certain times of the year. The Monsoon Season typically lasts from June to September. Unless you’re comfortable with rain and possible flooding, it’s probably a good idea to visit outside of this time. The summer months, usually from March to May can be extremely warm and humid. Most locals and tourists agree that the best months to visit Mumbai are from October to February.\nTheft\nAs in any large city around in the world, tourists must be wary of criminals. From the crowded side streets of the city to the beach resorts, tourists are often robbed and pick-pocketed. Always be on alert for possible thieves and keep your belongings close to your body at all times. Around the airports criminals can target women, often grabbing their purses, bags, and cell phones and then riding off on bicycles.
+Fortunately, violence against tourists is rare. You’re much more likely to be overcharged by a taxi cab driver than physically attacked by a criminal. You may think that avoiding dense, busy streets will decrease your chances of being the victim of a crime, but the opposite is actually true. Many people are robbed within the city, but many more are victims of crimes in less populated areas, like the suburbs and beaches, especially at night. If you stay in public places and keep a watchful eye on your surroundings, but don’t be overly paranoid, and your trip to Mumbai will be one to remember."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="videomclk"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/play"
+                 />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

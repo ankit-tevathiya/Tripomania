@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pranjal.secondproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logotm"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.LoginStyle" />
+        <activity android:name=".ScrollViewHarshit" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".agraculture" />
+        <activity android:name=".agralifestyle" />
+        <activity android:name=".agratourist" />
+        <activity android:name=".goamain" />
+        <activity android:name=".gculture" />
+        <activity android:name=".glifestyle" />
+        <activity android:name=".gtourist" />
+        <activity android:name=".mumbaimain" />
+        <activity android:name=".mumbaiculture" />
+        <activity android:name=".mumbailifestyle" />
+        <activity android:name=".mumbaitourism" />
+        <activity android:name=".delhimain" />
+        <activity android:name=".delhiculture" />
+        <activity android:name=".delhilifestyle" />
+        <activity android:name=".delhitourism" />
+    </application>
+
+</manifest>

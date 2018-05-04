@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    tools:context="com.example.pranjal.secondproject.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350sp">
+
+        <ViewFlipper
+            android:id="@+id/bckgrndViewFlipper1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/bckgrndImageView5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a" />
+
+            <ImageView
+                android:id="@+id/bckgrndImageView4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/b" />
+
+            <ImageView
+                android:id="@+id/bckgrndImageView3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/c" />
+
+            <ImageView
+                android:id="@+id/bckgrndImageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/d" />
+
+            <ImageView
+                android:id="@+id/bckgrndImageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/e" />
+
+        </ViewFlipper>
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/culture"
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClick1"
+                    android:src="@drawable/culture" />
+
+                <ImageView
+                    android:id="@+id/lifestyle"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClick2"
+                    android:src="@drawable/lifestyle" />
+
+                <ImageView
+                    android:id="@+id/attract"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClick3"
+                    android:src="@drawable/attract" />
+
+                <ImageView
+                    android:id="@+id/hotel"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClick4"
+                    android:src="@drawable/hotels" />
+
+                <ImageView
+                    android:id="@+id/train"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClick5"
+                    android:src="@drawable/train" />
+
+                <ImageView
+                    android:id="@+id/planes"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClick6"
+                    android:src="@drawable/planes" />
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="435dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Best Time To Visit"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Agra has dry summers, mild winter, and moderate monsoons. It also has the best time to visit Agra would be in the transition between summer and winter. Generally, the months between October and March are considered as the tourist season, with an average temperature of around 10 to 12 degrees Celsius. The heat of summer will have cooled off, and winter will be just around the corner, by mid-October. You can also visit Agra during the monsoon season, between August and October. The vision of a rain-drenched Taj Mahal is indeed a sight to behold."
+                android:textColor="?attr/colorControlNormal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="agra is very famous for its mughlai foods.but its non veg .  Mughlai food in sadar bazar on streets available also famous places are nai ki mandi ,and tajganj.  For prantha rambabu prantha is famous in belanganj,one more branch on delhi agra highway.  For Petha and dalmoth panchi and gokul das baijnath famous.  Gor samosa and chaat in sadar there is chaat gali.and gmb on fatehabad road.  Do try agra famous breakfast badhai kachori and subji gmb ,shree ji famous on fatehabad road.and deviram sweets at pratappura.  For shoes, on delhi agra highway factroy retail outlet of tej shoe factory.  And in sadar bajar there are few very cheap shop for export surplus.in sadar there is gurudwara near gurudwara many shops in residential area"
+                android:textColor="?attr/colorControlNormal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Agra: where to shop and eat?"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Tips on Agra Warnings or Dangers – Stay Safe!"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Agra Warnings and Dangers Agra is a major city in India that sits along the banks of the River Yamuna. It is an ancient city, but also one where you should be aware of local dangers and try to stay safe. Thieves Please be careful when you walk along the long corridor extending from the Taj Mahal electric bus parking area to the security check point at the main entrance. Groups of boys often swam unwary tourists and quickly try to pick their pockets. Be careful as you travel in this area. Local Sellers The hawkers around famous monuments are can be incredibly aggressive. They will also try and overcharge you by a large amount. If you must buy from one, make sure that you haggle for a good price. There are also touts in the area, employees who try and attract you to local stores. They get a commission for doing so, but the prices you find won’t be bargains. Again, you’ll have to haggle if you want to buy anything. The Weather The best time to visit Agra and surrounding areas of the Golden Triangle, including Delhi and Jaipur, is during the cooler and dry season between November and March. After this, the weather gets incredibly hot and humid. Unfortunately, the cooler season is also the main tourist season, so do plan ahead."
+                android:textColor="?attr/colorControlNormal"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="videoaclk"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/play"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

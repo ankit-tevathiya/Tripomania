@@ -1,0 +1,94 @@
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax" />
+
+            <ImageView
+                android:id="@+id/bgheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.47"
+                android:background="@drawable/mumlifestyle"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.47"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Mumbai Lifestyle"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="1550sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Mysterious, Magic, Magnificent and always Memorable  Often referred to as the “Gateway of India,” Mumbai is a place that is characterized by color, energy and life. It is an extremely busy place to live, where  different people from various cultures, religions and economic backgrounds converge to carve a path for themselves in a city that has come to be known as “the city of  dreams.”  Mumbai is often described as a place of contrasts and this is never more evident than in the stark divides between the rich and the poor. Slums and shanties are  juxtaposed next to the multi-million pound homes of the rich and famous, sleek limousines glide past over-crowded double decker buses and the bling on display in the  glitzy shop fronts is obscured by homeless beggars and pavement stalls. Yet, despite these differences, the people of Mumbai exist peacefully, permeating an attitude  of unity and fortitude.  Many expatriates may approach their impending relocation to Mumbai as a necessity that is to be endured, as opposed to embraced. However, there is much more to this  fascinating city than power cuts, congestion, poverty, red tape and pollution. After living here for some time, you will slowly start to realize that the city is  much more organized than it may first seem, albeit in a different way than that you may have become accustomed to it the West. You may also discover the heart of the  Indian people and warm to their incredibly friendly nature and willingness to help.  Both gritty and glamorous, Mumbai seems to embody the personality of current day India. From the hip and trendy cocktail bars and after-hours clubs in Bandra and  Colaba, to the hawker stalls stocked with patties, puris, kebabs and lassis, there is something on offer for everyone and an experience that will live with you  forever.   	"
+                android:textSize="24sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

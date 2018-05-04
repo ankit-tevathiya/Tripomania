@@ -1,0 +1,94 @@
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax" />
+
+            <ImageView
+                android:id="@+id/bgheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.47"
+                android:background="@drawable/delhiculture"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.47"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Culture"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="1650sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Delhi is the traditional and present day capital of India. Delhi stands in a triangle formed by the river Yamuna in the east and spurs from the Aravali range in the west and south.   Delhi is not only the largest commercial centre in Northern India, but also the largest centre of small industries. The IT sector, handloom, fashion, textile and electronic industry contribute a lot to Delhi's economy.   Delhi is bounded by four states namely Haryana, Rajasthan, Uttar Pradesh and Punjab that have a strong influence on the lifestyle of Delhi. Delhi is a cosmopolitan city where people are open to embracing new ideas and life style. People from all parts of the country live here. Alll major festival of Inida are celebrated and the Unity in Diversity is evident in social and cultural gatherings. Be it Holi, Diwali, Id, Guru Purab, Buddha Purnima or Christmas, you will find the same vigor and bliss among people from different communities.  The diversity of Delhi makes it colorful and lively to live in. The exquisite design of Jama Masjid reflects Indo-Persian architecture; well known temples such as Birla Temple and Chattarpur Temple complex display the architectural styles of North and South India.   The places of worship, popular in Delhi include the Gurdwaras of Delhi like Bangla Sahib, Gurdwara Raquab Ganj and Sheesh Ganj, famous Churches like St. Mary’s, St. Thomas and St. Columbus. Remarkable Lotus Temple represents the Bahai culture and its marvelous architecture. You can find the Jain and Buddhist shrines along with the Tibetan monastery in the city.  The people dwelling in the capital city- Delhi are regarded as the most hospitable people of India. They are friendly, cheerful and helpful. The inhabitants of Delhi honor their guests and treat them well with respect. As the inhabitants of Delhi hail from all parts of Indian region, they are multi lingual people with varied culture. "
+                android:textSize="24sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

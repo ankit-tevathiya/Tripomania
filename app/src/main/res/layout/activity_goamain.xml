@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    tools:context="com.example.pranjal.secondproject.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="350sp">
+
+            <ViewFlipper
+                android:id="@+id/bckgrndViewFlipper1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/goaa" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/goab" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/goac" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/goad" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/goae" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" sea" />
+
+            </ViewFlipper>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/culture"
+                        android:layout_width="78dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="false"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick1"
+                        android:src="@drawable/gculture" />
+
+                    <ImageView
+                        android:id="@+id/lifestyle"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick2"
+                        android:src="@drawable/glife" />
+
+                    <ImageView
+                        android:id="@+id/attract"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick3"
+                        android:src="@drawable/gtourist" />
+
+                    <ImageView
+                        android:id="@+id/hotel"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick4"
+                        android:src="@drawable/ghotels" />
+
+                    <ImageView
+                        android:id="@+id/train"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick5"
+                        android:src="@drawable/trainy" />
+
+                    <ImageView
+                        android:id="@+id/planes"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onClick6"
+                        android:src="@drawable/planes" />
+
+                </LinearLayout>
+
+
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="435dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Best time to visit"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="Mid-November to Mid-February: These are the best months to visit the party capital since the weather is pleasantly cool and comfortable. It’s the perfect time to relax on the beaches amidst other tourists who make the most of these three months in Goa. December is the time when Goa witnesses one of its most popular festivals, Sunburn, besides extensive Christmas and New Year celebrations and is home to lakhs of visitors from across the world. You might want to book your hotels in advance since this is the peak season and prices of accommodation go way higher than you would imagine.  March to May: This is the season when the temperature rises, the sea becomes rougher and the weather turns hot and humid. Not many people visit Goa between the months of March and May since there are not many activities to indulge in. However, the prices of hotels and home stays become way too reasonable in case you want to visit Goa for a three-to-four day break with your beloved, looking for peace and calm.  Mid-June to October: Mid-June to October is the time when the rains hit the beautiful Goa. There are parties across the length and breadth of Goa to welcome the rains. If you love the monsoon and the lush green countryside that the rain Gods turn Goa into, July to September is a great time to visit. One of the reasons to visit Goa during monsoons is also due to the festival of Sao-Joao (the fertility feast of Saint John the Baptist) that is held during late June. It’s an interesting event where men jump into wells that are overflowing to fetch bottles of the local alcohol called feni. You might get a good bargain at the hotels during this season."
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text=" WHAT TO BUY #FAMOUSFOR"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Feni or Cashew Feni: Feni is country liquor almost synonyms with Goa and best Goa Feni is made from cashews apple, though and there is also a Feni made from coconut.  Feni is the unofficial state drink of Goa, a bottle of Feni will cost you around 100 Rs and if you want to buy some drink for your bewday ( बेवड़े = Drunkard) friend then buy some bottles of Feni. \nPort Wine: Port wine came to Goa with the Portuguese when they started local production of wine, the Portuguese left but wine remained along with other signs of Portuguese culture. Most of the port wines are sweet and fairly cheap.  The challenge is now with good wineries coming in Goa, the Portuguese are a worried lot and want to apply geographical restrictions on calling wines produced in Goa as Port wines.(  Warning from desi Traveler: Big B said in his super hit movie “ Satte Pe Satta”… daroo peene say liver kharab ho jata hai… (Translation: Drinking alcohol leads to a spoiled liver -the one in your body not Johnny Lever’s Liver).   \nSpices: Yes you read it right Kerala is not the only place to get spices, Goa is also on the Malabar Cost of India and grows all kind of spices. Only they never branded themselves as spice country, being happy with labeled only as beach country. So you can visit some of the spice farms who offer guided tours and sell spices grown in Goa. The icing on the cake is that they are fresh and a little cheaper than what you get elsewhere. So take your pick from Cardamom, Cinnamon, Black Pepper, Cloves and a host of other aromatic spices which launched a thousand ships from Europe to discover a sea route to India, to break the monopoly of Arab traders on the spice trade. \nCashews: Buy as much as you can carry, for the best cashew in the country is found in Goa. You will get them in all flavors, spicy, salty, colored, coated with chick flour etc. Trivia: The trees were imported from South America to prevent soil erosion. Sorry to break your heart if you thought Cashew is as Indian as Aloo, (potato) which also, by the way, is also South American."
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/BEWAREOF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="BEWARE OF"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Do not keep your valuables unattended during your stay at the beach.  Nudity on beaches and public places is forbidden and punishable under the law.  Use repellents and mosquito nets to protect yourself from insects and mosquitoes. Wearing long-sleeved shirts and long pants from dusk through dawn also helps.  Your money, passport must be kept in a safe place at your hotel reception or on your person. Do not keep them in the custody of undesirable persons. In case of loss of any documents contact the nearest Government of India Tourist Office or the nearest State Government Tourist Office or the nearest Police Station.  Traffic circulation in Goa is on the left. Keep your valid documents, driving licence, passports etc., in your possession while driving. If you are a Foreign national you must possess an International Drivers licence to be able to drive. Follow Police Traffic rules strictly to avoid any mishaps.  Do observe silence, due respect and proper decorum inside the places of worship and religious monuments that you might visit. Most importantly, always remove your shoes at the entrance to the main hall of any holy shrine. It is also a good idea to leave a small donation for the upkeep of the building when you leave.  If you take the bus transport for travelling around Goa be prepared for a rough ride. There are no fixed timetables and frequently no bus stops at even regular stops.  Always be ready to bargain in most small establishments. As a thumb rule offer 20% of the asking price, and be prepared to pay 35-40% % of the original asked price.  In case you want to extend your visa, contact the Foreigners Regional Registration Office located in the Police Headquarters at Panaji.  Shop at Government emporia/handicraft centres for quality products at reasonable prices."
+            android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="videogclk"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/play"
+                />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
